@@ -1,0 +1,30 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Clean Blog Web Page",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atakatom/CleanBlog.git"
+  },
+  "keywords": [
+    "clean",
+    "blog",
+    "blogging"
+  ],
+  "author": "Atakan Yontar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atakatom/CleanBlog/issues"
+  },
+  "homepage": "https://github.com/Atakatom/CleanBlog#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
