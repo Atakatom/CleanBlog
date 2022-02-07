@@ -1,16 +1,27 @@
 const express = require('express');
+const ejs = require('ejs');
+
 const app = express();
 
+//TEMPLATE ENGINE
+app.set('view engine', 'ejs');
+
+//MIDDLEWARES
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  const blog = {
-    id: 1,
-    title: 'Blog Title',
-    description: 'Blog Description',
-  };
-  res.send(blog);
+  res.render('index');
 });
 
-const port = 3000;
+app.get('/about', (req,res) => {
+  res.render('about')
+})
+
+app.get('/add_post', (req,res) => {
+  res.render('add_post')
+})
+
+const port = 4000;
 app.listen(port, () => {
   console.log(`Welcome to the server running on port ${port}`);
 });
